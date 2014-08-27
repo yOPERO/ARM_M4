@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+C:\Keil\Labware\Lab7_SOS\Lab7.uvproj
+Project File Date:  01/17/2014
+
+<h2>Output:</h2>
+Build target 'Lab7'
+compiling main.c...
+linking...
+Program Size: Code=4184 RO-data=8988 RW-data=64 ZI-data=1752  
+".\Lab7.axf" - 0 Error(s), 0 Warning(s).
+</pre>
+</body>
+</html>
+
+
+main.c(64): error:  #67: expected a "}"
+  void PortF_Init(void){ volatile unsigned long delay;
+main.c: 0 warnings, 2 errors
+".\Lab7.axf" - 2 Error(s), 0 Warning(s).
+Target not created
+class or type specifier
+    GPIO_PORTF_DATA_R &= ~0x0E;delay(1);
+main.c(118): error:  #147: declaration is incompatible with "void delay(unsigned long)" (declared at line 38)
+    GPIO_PORTF_DATA_R &= ~0x0E;delay(1);
+main.c(119): error:  #79: expected a type specifier
+    delay(10); // Delay for 5 secs in between flashes 
+main.c(119): warning:  #77-D: this declaration has no storage class or type specifier
+    delay(10); // Delay for 5 secs in between flashes 
+main.c(121): error:  #169: expected a declaration
+  }
+main.c(139): warning: At end of source:  #12-D: parsing restarts here after previous syntax error
+main.c: 4 warnings, 5 errors
+".\Lab7.axf" - 5 Error(s), 4 Warning(s).
+Target not created
